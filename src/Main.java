@@ -12,5 +12,11 @@ public class Main {
         System.out.println(book1);
         book1.setPublicationDate(2031);
         System.out.println(book1);
+
+    if(author.equals(author1)){
+        System.out.println("объекты равны");
+    } else {
+        System.out.println("объекты не равны");
+    }
     }
 }
