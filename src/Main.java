@@ -4,6 +4,9 @@ public class Main {
         author.setLastName("Пушкин");
         author.setFirstName("Константин");
         author.setAge(21);
+        System.out.println(author.hashCode());
+        author.setFirstName("Карапузов");
+        System.out.println(author.hashCode());
         author author1 = new author("Василий", "Артемонов");
         book book1 = new book("пока все дома", 2025, author);
         book book2 = new book("Надо", 2027, author1);
