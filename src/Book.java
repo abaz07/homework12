@@ -1,9 +1,9 @@
-public class book {
+public class Book {
     private String title;
     private int publicationDate;
-    private author author;
+    private Author author;
 
-    public book(String title, int publicationDate, author author) {
+    public Book(String title, int publicationDate, Author author) {
         this.title = title;
         this.publicationDate = publicationDate;
         this.author = author;
@@ -25,11 +25,11 @@ public class book {
         this.publicationDate = publicationDate;
     }
 
-    public author getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(author author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
@@ -37,7 +37,7 @@ public class book {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
         if (!super.equals(object)) return false;
-        book book = (book) object;
+        Book book = (Book) object;
         return publicationDate == book.publicationDate && java.util.Objects.equals(title, book.title) && java.util.Objects.equals(author, book.author);
     }
 

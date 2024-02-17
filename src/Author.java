@@ -1,17 +1,17 @@
 import java.util.Objects;
 
-public class author {
+public class Author {
     private String firstName;
     private String lastName;
     private int age;
-    public author() {
+    public Author() {
     }
 
-    public author(String firstName) {
+    public Author(String firstName) {
         this.firstName = firstName;
     }
 
-    public author(String firstName, String lastName) {
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -53,7 +53,7 @@ public class author {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        author author = (author) o;
+        Author author = (Author) o;
         return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }
 

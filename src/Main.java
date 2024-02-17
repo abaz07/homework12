@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args){
-        author author = new author();
+        Author author = new Author();
         author.setLastName("Пушкин");
         author.setFirstName("Константин");
         author.setAge(21);
         System.out.println(author.hashCode());
         author.setFirstName("Карапузов");
         System.out.println(author.hashCode());
-        author author1 = new author("Василий", "Артемонов");
-        book book1 = new book("пока все дома", 2025, author);
-        book book2 = new book("Надо", 2027, author1);
+        Author author1 = new Author("Василий", "Артемонов");
+        Book book1 = new Book("пока все дома", 2025, author);
+        Book book2 = new Book("Надо", 2027, author1);
         System.out.println(author);
         System.out.println(author1);
         System.out.println(book1);
